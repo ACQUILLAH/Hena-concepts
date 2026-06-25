@@ -29,12 +29,15 @@ header{
     z-index:1000;
 }
 
-.logo h2{
+   .logo h2{
     color:#0B1B2B;
     font-size:28px;
-    .logo img {
-    height: 50px;
-    width: auto;
+}
+
+.logo img{
+    height:50px;
+    width:auto;
+}
 }
 }
 
@@ -213,11 +216,9 @@ nav ul li a:hover{
     font-size:40px;
 }
 
-.project-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
+   .project-grid{
+    grid-template-columns:1fr;
+} 
 
 .project{
     background:#ddd;
@@ -269,6 +270,11 @@ footer{
         justify-content:center;
     }
 
+    .hero{
+        padding:100px 20px;
+        text-align:center;
+    }
+
     .hero-content h1{
         font-size:45px;
     }
@@ -279,56 +285,16 @@ footer{
 
     .buttons{
         flex-direction:column;
-    }/* Mobile Responsive Design */
-@media (max-width: 768px) {
-
-    nav {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
+        align-items:center;
     }
 
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
+    .service-grid{
+        grid-template-columns:1fr;
     }
 
-    .hero {
-        padding: 100px 20px;
-        text-align: center;
+    .project-grid{
+        grid-template-columns:1fr;
     }
 
-    .hero h1 {
-        font-size: 2rem;
-        line-height: 1.2;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-    }
-
-    .services-grid,
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-content {
-        flex-direction: column;
-    }
-
-    .contact-container {
-        flex-direction: column;
-    }
-
-    .footer-content {
-        text-align: center;
-    }
 }
-}
+   
