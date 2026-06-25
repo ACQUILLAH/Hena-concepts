@@ -9,7 +9,22 @@
 html{
     scroll-behavior:smooth;
 }
-
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:28px;
+    z-index:1000;
+}
 body{
     background:#fff;
     color:#333;
