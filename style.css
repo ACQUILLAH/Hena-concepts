@@ -279,5 +279,56 @@ footer{
 
     .buttons{
         flex-direction:column;
+    }/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
     }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 100px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .services-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+}
 }
